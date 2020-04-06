@@ -1,0 +1,57 @@
+{
+    "users" : [
+        {
+            "type": "LOGIN_REQUEST",
+            "payload" : {
+                "username": "azam",
+                "password" : "Azam@12345",
+                "corpid" : "CINTL",
+                "mpid" : "VNDM",
+                "data" : {
+                    "message" : "User Login Request",
+                    "token" : "test",
+                    "isLoading" : true,
+                    "isError" : true,
+                    "trackInfo" : "login",
+                    "isTaging" : true
+                }
+               
+            }
+        } ,
+        {
+            "type": "LOGIN_SUCCESS",
+            "payload" : {
+                "username": "azam",
+                "password" : "Azam@12345",
+                "corpid" : "CINTL",
+                "mpid" : "VNDM",
+                "data" : {
+                    "message" : "User Login Sucessfully",
+                    "token" : "test",
+                    "isLoading" : true,
+                    "isError" : true,
+                    "trackInfo" : "loggedIn",
+                    "isTaging" : true,
+                    "userConfig":{} 
+                }
+            }
+        },
+        {
+            "type": "LOGIN_ERROR",
+            "payload" : {
+                "username": "azam",
+                "password" : "Azam@12345",
+                "corpid" : "CINTL",
+                "mpid" : "VNDM",
+                "data" : {
+                    "message" : "User Login Error",
+                    "isLoading" : false,
+                    "isError" : true,
+                    "trackInfo" : "loggedInError",
+                    "isTaging" : false,
+                    "token" : "test"
+                }
+            }
+        }     
+    ]
+}
